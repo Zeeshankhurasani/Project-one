@@ -1,0 +1,2 @@
+# reverses_link_list
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/4a5b72c3559241b98c825de73de47a42)](https://www.codacy.com/app/Zeeshankhurasani/reverses_link_list?utm_source=github.com&utm_medium=referral&utm_content=Zeeshankhurasani/reverses_link_list&utm_campaign=badger)

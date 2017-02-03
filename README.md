@@ -19,3 +19,10 @@ Create a new Java class:
   In the dialog give the Class Name I.e. File Name -Alert it should start with Capital Letter Always
   Then Select main method check box click on Ok.
 It will create a new class with Public Static Void Main method in it - you can see this in editor Save the file and right click on file - go to Run - java .. See the console window for output. 
+
+
+
+
+_____________________________________________________________________________
+
+http://www.jacoco.org/jacoco/trunk/coverage/ 

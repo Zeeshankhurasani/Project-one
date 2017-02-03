@@ -8,11 +8,9 @@ In the loop, we need to change NextNode to PrevNode, PrevNode to CurrNode and Cu
 Taking 3 pointers: PrevNode, CurrNode and NextNode where CurrNode pointing to HeaderNode
 
 After First Iteration:
-
 After the first iteration of the loop, PrevNode points to the node containing element 1 and CurrNode & NextNode points to the node containing element 2. And the node pointed by PrevNode gets unlinked.
 
 After Second Iteration:
-
 After the second iteration of the loop, PrevNode Points to the node containing element 2 and CurrNode & NextNode point to the node containing element 3. And the CurrNode next would be pointing to PrevNode.
 
 

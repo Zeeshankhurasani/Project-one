@@ -1,0 +1,20 @@
+The following are the sequence of steps to be followed:
+
+Initially take three pointers: 1.PrevNode 2.CurrNode 3.NextNode
+Let CurrNode point to HeaderNode of the given list and PrevNode and NextNode points to null
+Now iterate through the linked list until CurrNode is null
+In the loop, we need to change NextNode to PrevNode, PrevNode to CurrNode and CurrNode to NextNode
+
+Taking 3 pointers: PrevNode, CurrNode and NextNode where CurrNode pointing to HeaderNode
+
+After First Iteration:
+
+After the first iteration of the loop, PrevNode points to the node containing element 1 and CurrNode & NextNode points to the node containing element 2. And the node pointed by PrevNode gets unlinked.
+
+After Second Iteration:
+
+After the second iteration of the loop, PrevNode Points to the node containing element 2 and CurrNode & NextNode point to the node containing element 3. And the CurrNode next would be pointing to PrevNode.
+
+
+By the end of the iteration, PrevNode contains the reverse of the complete list.
+

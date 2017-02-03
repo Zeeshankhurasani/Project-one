@@ -1,8 +1,8 @@
 
-public class LinkedList {
-	
-	static Node head;
-	 
+class LinkedList {
+ 
+    static Node head;
+ 
     static class Node {
  
         int data;
@@ -14,27 +14,19 @@ public class LinkedList {
         }
     }
  
-    // A simple and tail recursive function to reverse
-    // a linked list.  prev is passed as NULL initially.
-    Node reverseUtil(Node curr, Node prev) {
- 
-        /* If last node mark it head*/
-        if (curr.next == null) {
-            head = curr;
- 
-            /* Update next to prev node */
-            curr.next = prev;
-            return null;
+    /* Function to reverse the linked list */
+    Node reverse(Node node) {
+        Node prev = null;
+        Node current = node;
+        Node next = null;
+        while (current != null) {
+            next = current.next;
+            current.next = prev;
+            prev = current;
+            current = next;
         }
- 
-        /* Save curr->next node for recursive call */
-        Node next1 = curr.next;
- 
-        /* and update next ..*/
-        curr.next = prev;
- 
-        reverseUtil(next1, curr);
-        return head;
+        node = prev;
+        return node;
     }
  
     // prints content of double linked list
@@ -47,19 +39,17 @@ public class LinkedList {
  
     public static void main(String[] args) {
         LinkedList list = new LinkedList();
-        list.head = new Node(11);
-        list.head.next = new Node(12);
-        list.head.next.next = new Node(13);
-        list.head.next.next.next = new Node(14);
-        list.head.next.next.next.next = new Node(15);
-        list.head.next.next.next.next.next = new Node(16);
- 
-        System.out.println("Linked list ");
+        list.head = new Node(67);
+        list.head.next = new Node(14);
+        list.head.next.next = new Node(3);
+        list.head.next.next.next = new Node(23);
+         
+        System.out.println("Given Linked list");
         list.printList(head);
-        Node res = list.reverseUtil(head, null);
+        head = list.reverse(head);
         System.out.println("\n");
         System.out.println("Reversed linked list ");
-        list.printList(res);
+        list.printList(head);
     }
-
 }
+ 

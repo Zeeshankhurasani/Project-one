@@ -1,6 +1,7 @@
 
 _____________________________________________________
 HOW TO RUN CODE
+--------------
 _____________________________________________________
 To run this program: follow these steps:
 
@@ -14,15 +15,8 @@ Start Eclipse.
   Click "Finish"--It will ask you if you want the Java perspective to open. 
 	
 Create a new Java class:
------------------------
+___________________________________________
   Click the "Create a Java Class" button in the toolbar. (This is the icon below "Run" and "Window" with a tooltip that says "New Java Class.")
   In the dialog give the Class Name I.e. File Name -Alert it should start with Capital Letter Always
   Then Select main method check box click on Ok.
 It will create a new class with Public Static Void Main method in it - you can see this in editor Save the file and right click on file - go to Run - java .. See the console window for output. 
-
-
-
-
-_____________________________________________________________________________
-
-http://www.jacoco.org/jacoco/trunk/coverage/ 

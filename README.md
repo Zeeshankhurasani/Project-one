@@ -28,8 +28,8 @@ public class LinkedList {
     }
  
     /* Function to reverse the linked list */
-    		  .
-		  .
+    		  
+		  
 	   YOUR LOGIC HERE
  
 }

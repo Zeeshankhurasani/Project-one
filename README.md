@@ -57,8 +57,8 @@ This is a simple constructor which just copies the argument to its field. It rep
         }
         node = prev;
         return node;
-	}
-	```
+	} 
+```
 	
 Create 3 nodes: `currNode`, `PrevNode` and `nextNode`.
 Initially take three pointers: PrevNode, CurrNode, NextNode

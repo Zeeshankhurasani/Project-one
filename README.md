@@ -11,8 +11,8 @@ Available at: https://eclipse.org/mars/ </code></pre>
 
 Eclipse is a Java based open source platform that allows a software developer to create a customized development environment (IDE) from plug-in components built by Eclipse members. Eclipse Mars 4.5 version were used and it supports Java version 8. Can be download [Here](https://eclipse.org/mars/) .  
 
-
-<pre><code>class LinkedList {
+```javascript
+public class LinkedList {
  
     static Node head;
  
@@ -30,18 +30,23 @@ Eclipse is a Java based open source platform that allows a software developer to
     /* Function to reverse the linked list */
    <b> YOUR LOGIC HERE</b>
  
-}</code></pre>
+}
+```
 `LinkedList` class holds the logic to Reversing list. 
 
 
-<pre><code>class Node {
+```javascript
+class Node {
     Node next = null;
-    int data; </code></pre>
+    int data; 
+```
 The next holds the next node in a list. If it is the last node, it holds null. The data is a data associated with this node, which in this case is of type int(BTW it should be final).
 
-<pre><code>public Node(int d) {
+```javascript
+public Node(int d) {
     data = d;
-} </code></pre>
+} 
+```
 This is a simple constructor which just copies the argument to its field. It represent the head of the list and a list itself.
  
  ```javascript
@@ -68,12 +73,14 @@ Now iterate through the linked list until `CurrNode` is `null`
 In the loop, we need to change `NextNode` to `PrevNode`, `PrevNode` to `CurrNode` and `CurrNode` to `NextNode`
 Now keep reversing the pointers one by one till `currNode!=null`.
 
-<pre><code>void printList(Node node) {
+```javascript
+void printList(Node node) {
         while (node != null) {
             System.out.print(node.data + " ");
             node = node.next;
         }
-	}</code></pre>
+	}
+```
 printList is used to prints content of double linked list. 
 
 ________________________________________________

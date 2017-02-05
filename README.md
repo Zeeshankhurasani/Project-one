@@ -7,7 +7,7 @@ Java(TM) SE Runtime Environment, Standard Edition (build 1.8.0_91-b15)</code></p
 
 <pre><code>Eclipse Mars 4.5 version
 Available at: https://eclipse.org/mars/ </code></pre>
-Eclipse is a Java based open source platform that allows a software developer to create a customized development environment (IDE) from plug-in components built by Eclipse members. Eclipse Mars <b>4.5</b> version were used and it supports Java version 8.
+Eclipse is a Java based open source platform that allows a software developer to create a customized development environment (IDE) from plug-in components built by Eclipse members. Eclipse Mars 4.5 version were used and it supports Java version 8. Can be download it at https://eclipse.org/mars/ .  
 
 
 <pre><code>class LinkedList {
@@ -83,7 +83,7 @@ Start Eclipse:
   Click "Finish"--It will ask you if you want the Java perspective to open.</code></pre>
 	
 Create a new Java class:
-Click the "Create a Java Class" button in the toolbar. (This is the icon below "Run" and "Window" with a tooltip that says "New Java Class.")
+<pre><code>Click the "Create a Java Class" button in the toolbar. (This is the icon below "Run" and "Window" with a tooltip that says "New Java Class.")
   In the dialog give the Class Name I.e. File Name -Alert it should start with Capital Letter Always
-  Then Select main method check box click on Ok.
+  Then Select main method check box click on Ok.</code></pre>
 It will create a new class with Public Static Void Main method in it - you can see this in editor Save the file and right click on file - go to Run - java .. See the console window for output. 

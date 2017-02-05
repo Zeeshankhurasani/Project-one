@@ -28,7 +28,9 @@ public class LinkedList {
     }
  
     /* Function to reverse the linked list */
-   <b> YOUR LOGIC HERE</b>
+    		  .
+		  .
+	   YOUR LOGIC HERE
  
 }
 ```
@@ -40,7 +42,7 @@ class Node {
     Node next = null;
     int data; 
 ```
-The next holds the next node in a list. If it is the last node, it holds null. The data is a data associated with this node, which in this case is of type int(BTW it should be final).
+The `next` holds the next node in a list. If it is the last node, it holds `null`. The data is a data associated with this node, which in this case is of type int(BTW it should be final).
 
 ```javascript
 public Node(int d) {

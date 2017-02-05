@@ -1,6 +1,10 @@
-The following are the sequence of steps to be followed:
+The following are the sequence of steps to be followed
 
-Initially take three pointers: 1.PrevNode 2.CurrNode 3.NextNode
+Initially take three pointers: 
+1.PrevNode 
+2.CurrNode 
+3.NextNode
+
 Let CurrNode point to HeaderNode of the given list and PrevNode and NextNode points to null
 Now iterate through the linked list until CurrNode is null
 In the loop, we need to change NextNode to PrevNode, PrevNode to CurrNode and CurrNode to NextNode

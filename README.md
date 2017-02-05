@@ -3,13 +3,13 @@ Dependencies
 <pre><code>C:\Users\Zeeshan>java -version
 java version "1.8.0_91"
 Java(TM) SE Runtime Environment, Standard Edition (build 1.8.0_91-b15)</code></pre>
-<b>1.8.0.91</b> version of java is used to run this project. 
+_1.8.0.91_ version of java is used to run this project. 
 
 <pre><code>Eclipse Mars 4.5 version
 Available at: https://eclipse.org/mars/ </code></pre>
 - [x] Eclipse
 
-Eclipse is a Java based open source platform that allows a software developer to create a customized development environment (IDE) from plug-in components built by Eclipse members. Eclipse Mars 4.5 version were used and it supports Java version 8. Can be download [Here](https://eclipse.org/mars/) .  
+Eclipse is a Java based open source platform that allows a software developer to create a customized development environment (IDE) from plug-in components built by Eclipse members. Eclipse Mars 4.5 version were used and now it supports Java version 8. Can be download [Here](https://eclipse.org/mars/) .  
 
 ```javascript
 public class LinkedList {

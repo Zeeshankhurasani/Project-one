@@ -75,6 +75,13 @@ Now iterate through the linked list until `CurrNode` is `null`
 In the loop, we need to change `NextNode` to `PrevNode`, `PrevNode` to `CurrNode` and `CurrNode` to `NextNode`
 Now keep reversing the pointers one by one till `currNode!=null`.
 
+__After First Iteration:__
+After the first iteration of the loop `PrevNode` points to the node containing element 1 and `CurrNode` & `NextNode` points to the node containing element 2. And the node pointed by `PrevNode` gets unlinked.
+
+__After Second Iteration:__
+After the second iteration of the loop, `PrevNode` Points to the node containing element 2 and `CurrNode` and `NextNode` point to the node containing element 3. And the `CurrNode` next would be pointing to `PrevNode`.
+_And by the end of the iteration, PrevNode contains the reverse of the complete list_
+
 ```javascript
 void printList(Node node) {
         while (node != null) {
@@ -83,15 +90,15 @@ void printList(Node node) {
         }
 	}
 ```
-printList is used to prints content of double linked list. 
+`printList` is used to prints content of double linked list. 
 
 ________________________________________________
 
-HOW TO RUN CODE
+How to Run Code
 ----------------------
 To run this program: follow these steps:
 
-Once you downloaded the eclipse and Jdk and Jre installed on machine
+Once you downloaded the `eclipse` and `Jdk` and Jre installed on machine
 Start Eclipse:
  Create a new Java Project.
  <pre><code>File->New->Project and Select "Java" in the category list.

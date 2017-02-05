@@ -1,5 +1,37 @@
 Dependencies
 -----------------------
+<pre><code>C:\Users\Zeeshan>java -version
+java version "1.8.0_91"
+Java(TM) SE Runtime Environment, Standard Edition (build 1.8.0_91-b15)</code></pre>
+<b>1.8.0.91</b> version of java is used to run this project. 
+
+<pre><code>Eclipse Mars 4.5 version
+Available at: https://eclipse.org/mars/ </code></pre>
+Eclipse is a Java based open source platform that allows a software developer to create a customized development environment (IDE) from plug-in components built by Eclipse members. Eclipse Mars <b>4.5</b> version were used and it supports Java version 8.
+
+
+<pre><code>class LinkedList {
+ 
+    static Node head;
+ 
+    static class Node {
+ 
+        int data;
+        Node next;
+ 
+        Node(int d) {
+            data = d;
+            next = null;
+        }
+    }
+ 
+    /* Function to reverse the linked list */
+   <b> YOUR LOGIC HERE</b>
+ 
+}</code></pre>
+LinkedList class holds the logic to Reversing list. 
+
+
 <pre><code>class Node {
     Node next = null;
     int data; </code></pre>
@@ -8,10 +40,35 @@ The next holds the next node in a list. If it is the last node, it holds null. T
 <pre><code>public Node(int d) {
     data = d;
 } </code></pre>
-
 This is a simple constructor which just copies the argument to its field. It represent the head of the list and a list itself.
+ 
+ <pre><code>Node reverse(Node node) {
+        Node prev = null;
+        Node current = node;
+        Node next = null;
+        while (current != null) {
+            next = current.next;
+            current.next = prev;
+            prev = current;
+            current = next;
+        }
+        node = prev;
+        return node;
+	}</code></pre>
+	
+Create 3 nodes, currNode, PrevNode and nextNode.
+Initialize them as currNode = head; nextNode = null;prevNode = null;
+Now keep reversing the pointers one by one till currNode!=null.
 
+<pre><code>void printList(Node node) {
+        while (node != null) {
+            System.out.print(node.data + " ");
+            node = node.next;
+        }
+	}</code></pre>
+printList is used to prints content of double linked list. 
 
+________________________________________________
 
 HOW TO RUN CODE
 ----------------------
@@ -20,10 +77,10 @@ To run this program: follow these steps:
 Once you downloaded the eclipse and Jdk and Jre installed on machine
 Start Eclipse:
  Create a new Java Project.
- File->New->Project and Select "Java" in the category list.
+ <pre><code>File->New->Project and Select "Java" in the category list.
   Select "Java Project" in the project list. Click "Next".
   Enter a project name into the Project name field, for example, "Reverses Link List".
-  Click "Finish"--It will ask you if you want the Java perspective to open.
+  Click "Finish"--It will ask you if you want the Java perspective to open.</code></pre>
 	
 Create a new Java class:
 Click the "Create a Java Class" button in the toolbar. (This is the icon below "Run" and "Window" with a tooltip that says "New Java Class.")

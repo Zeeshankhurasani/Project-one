@@ -16,9 +16,21 @@ class LinkedList {
  
     /* Function to reverse the linked list */
     Node reverse(Node node) {
-        Node prev = null;
+     //intialize prev , current and next to null
+       Node prev = null; 
         Node current = node;
-        Node next = null;
+        Node next = null; 
+     /*
+     Below loop proform step as follow:
+     
+     After the first iteration of the loop, PrevNode points to the node containing element 1 and 
+     CurrNode & NextNode points to the node containing element 2.And the node pointed by PrevNode gets unlinked.
+     
+     After the second iteration of the loop, PrevNode Points to the node containing element 2 and CurrNode &
+     NextNode point to the node containing element 3. And the CurrNode next would be pointing to PrevNode.
+
+     By the end of the iteration, PrevNode contains the reverse of the complete list.
+     */
         while (current != null) {
             next = current.next;
             current.next = prev;
@@ -46,10 +58,10 @@ class LinkedList {
          
         System.out.println("Given Linked list");
         list.printList(head);
-        head = list.reverse(head);
+        head = list.reverse(head); // print given values
         System.out.println("\n");
         System.out.println("Reversed linked list ");
-        list.printList(head);
+        list.printList(head); // Print reversed Values
     }
 }
  

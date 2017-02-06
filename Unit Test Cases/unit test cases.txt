@@ -19,4 +19,68 @@ After the second iteration of the loop, PrevNode Points to the node containing e
 
 
 By the end of the iteration, PrevNode contains the reverse of the complete list.
+--------------------------------------
+           Test Cases
+--------------------------------------
+import org.junit.Test;
+public class LinkedListTest {
+
+	@Test
+	public void testReverse() {
+		 Node head;
+		 
+		    class Node {
+		 
+		        int data;
+		        Node next;
+		 
+		        Node(int d) {
+		            data = d;
+		            next = null;
+		        }  
+		        
+		    void Reverse(Node node){
+		        Node prev = null;
+		        Node current = node;
+		        Node next = null;
+		        while (current != null) {
+		            next = current.next;
+		            current.next = prev;
+		            prev = current;
+		            current = next;
+		        }
+		        node = prev;
+		        //return;
+		    
+		    }
+		 }
+		    
+ }
+
+	@Test
+	public void testPrintList() {
+		System.out.println("Given Linked list");
+        LinkedList list = null;
+		LinkedList.Node head = null;
+		list.printList(head);
+        head = list.reverse(head);
+        System.out.println("\n");
+        System.out.println("Reversed linked list ");
+        list.printList(head);
+
+	}
+
+	@Test
+	public void testMain() {
+		 LinkedList list = new LinkedList();
+	        list.head = new LinkedList.Node(85);
+	        list.head.next = new LinkedList.Node(15);
+	        list.head.next.next = new LinkedList.Node(4);
+	        list.head.next.next.next = new LinkedList.Node(20);
+	        
+	        
+	}
+
+}
+	
 

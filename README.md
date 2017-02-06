@@ -3,7 +3,7 @@ Dependencies
 <pre><code>C:\Users\Zeeshan>java -version
 java version "1.8.0_91"
 Java(TM) SE Runtime Environment, Standard Edition (build 1.8.0_91-b15)</code></pre>
-_1.8.0.91_ version of java is used to run this project. 
+_1.8.0.91_ version of java is used to run this project but this program can be run on previous version as well. 
 
 <pre><code>Eclipse Mars 4.5 version
 Available at: https://eclipse.org/mars/ </code></pre>
